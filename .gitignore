@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 Messages/**/*
+markov_model.json
 
 # C extensions
 *.so

@@ -2,6 +2,12 @@
 
 ```python
 poetry install
+python markov.py
+```
+
+
+```python
+poetry install
 python count-discord-messages.py
 ```
 
