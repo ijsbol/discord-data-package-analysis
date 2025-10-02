@@ -25,7 +25,7 @@ def train(gen: MarkovGenerator) -> None:
             for message in messages:
                 if len(message["Contents"]) == 0:
                     continue
-                gen.train_from_text(message["Contents"], skip="")
+                gen.train_from_text_2layer(message["Contents"], skip="")
 
     gen.save_model("markov_model.json")
 
@@ -37,6 +37,7 @@ else:
 
 # Non-seeded (non-deterministic) output
 while True:
-    output = gen.generate(input("Enter a prompt: (can be empty): "), max_tokens=1000)
+    user_prompt = input("\nEnter a prompt: (can be empty, up to 2 words): ")
+    output = gen.generate_2layer(user_prompt, max_tokens=1000)
     print(" ".join(output))
-    print("\n\n")
+    print("\n")
