@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-Messages/**/*.json
+Messages/**/*
 
 # C extensions
 *.so

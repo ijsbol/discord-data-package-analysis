@@ -5,4 +5,7 @@ poetry install
 python count-discord-messages.py
 ```
 
-![img](messages.png)
+![img](messages_monthly.png)
+![img](messages_hourly.png)
+![img](messages_daily.png)
+![img](messages_weekly.png)
