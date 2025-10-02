@@ -1,3 +1,5 @@
+# Made with ❤️ by vcokltfre
+
 from json import dump, load
 from pathlib import Path
 
